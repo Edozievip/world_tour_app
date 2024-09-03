@@ -1,13 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agent Tours</title>
+    <link rel="stylesheet" href="{% static 'stylesheet/style.css' %}">
 </head>
 <body>
     <h1>This is a tour agency.</h1>
     <p>Designed by Chris.</p>
+    <img src="{% static 'images/link.png' %}" alt="" srcset="">
     <ol>
         {%for tour in tours%}
         <li>
